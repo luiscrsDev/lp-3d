@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NML03ZN3YL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NML03ZN3YL');
+</script>
+
+<meta name="description" content="Vitrine de impressoras 3D importadas direto dos EUA pela GlobalBrasilShop. Bambu Lab, Flashforge, Snapmaker e mais. Preço final calculado em BRL, frete e impostos inclusos. Não achou seu modelo? Solicite uma cotação personalizada." />
+<meta name="keywords" content="impressora 3D Brasil, importação direta, Bambu Lab, Flashforge, Snapmaker, GlobalBrasilShop, cotação personalizada" />
+<meta property="og:title" content="Impressoras 3D dos EUA na sua porta | GlobalBrasilShop" />
+<meta property="og:description" content="Bambu Lab, Flashforge, Snapmaker e mais. Importação direta com preço final calculado em BRL. Não achou seu modelo? Solicite cotação." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://3d.globalbrasilshop.com" />
+<meta property="og:site_name" content="GlobalBrasilShop" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:image" content="https://3d.globalbrasilshop.com/og-image.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Vitrine de impressoras 3D importadas direto dos EUA pela GlobalBrasilShop" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://3d.globalbrasilshop.com/og-image.png" />
+
+<title>Impressoras 3D dos EUA direto na sua porta | GlobalBrasilShop</title>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #0f172a;
+    background: #ffffff;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; }
+
+  :root {
+    --primary: #1e3a8a;
+    --primary-dark: #1e293b;
+    --primary-light: #eff6ff;
+    --accent: #0f172a;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --bg-soft: #f8fafc;
+    --success: #16a34a;
+    --gold: #fbbf24;
+    --br-green: #009c3b;
+    --us-red: #b22234;
+    /* tags por fornecedor */
+    --tag-snapmaker: #1e3a8a;
+    --tag-flashforge: #dc2626;
+    --tag-bambu: #10b981;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  /* TOPBAR */
+  .topbar {
+    background: var(--accent); color: #fff;
+    text-align: center; padding: 11px 16px;
+    font-size: 13px; font-weight: 600;
+  }
+  .topbar strong { color: var(--gold); }
+
+  /* HEADER */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 800; font-size: 18px; letter-spacing: -0.02em; color: var(--primary);
+  }
+  .logo-mark {
+    width: 44px; height: 44px; border-radius: 50%; overflow: hidden;
+    flex-shrink: 0; display: inline-block; box-shadow: 0 2px 6px rgba(0,0,0,0.12); background: #fff;
+  }
+  .logo-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .logo-text strong { font-size: 17px; font-weight: 900; color: var(--primary); }
+  .logo-text span { font-size: 10px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a { color: var(--muted); font-size: 14px; font-weight: 500; transition: color .2s; }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-links a.nav-cta {
+    background: var(--primary); color: #fff;
+    padding: 10px 20px; border-radius: 8px;
+    font-weight: 700; font-size: 14px;
+    transition: background .2s, transform .2s;
+    box-shadow: 0 4px 12px rgba(30,58,138,0.3);
+  }
+  .nav-links a.nav-cta:hover { background: var(--primary-dark); color: #fff; transform: translateY(-1px); }
+  @media (max-width: 768px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+  /* HERO */
+  .hero {
+    padding: 80px 0 64px;
+    background: linear-gradient(180deg, #fff 0%, var(--primary-light) 100%);
+    text-align: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #fff; border: 1px solid var(--border);
+    padding: 6px 14px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; color: var(--primary);
+    margin-bottom: 20px; box-shadow: var(--shadow-sm);
+  }
+  .hero-badge .dot { width: 6px; height: 6px; background: var(--success); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .hero h1 {
+    font-size: clamp(34px, 5.5vw, 56px);
+    font-weight: 900; line-height: 1.05; letter-spacing: -0.03em;
+    margin-bottom: 20px; max-width: 880px; margin-left: auto; margin-right: auto;
+  }
+  .hero h1 span { color: var(--primary); }
+  .hero p.lead {
+    font-size: 19px; color: var(--muted);
+    max-width: 680px; margin: 0 auto 32px;
+  }
+  .hero-cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--primary); color: #fff;
+    padding: 16px 28px; border-radius: 10px;
+    font-size: 16px; font-weight: 700;
+    transition: all .2s; display: inline-flex; align-items: center; gap: 8px;
+    box-shadow: 0 4px 14px rgba(30,58,138,0.35); cursor: pointer;
+  }
+  .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 6px 18px rgba(30,58,138,0.45); }
+  .btn-secondary {
+    background: #fff; color: var(--accent);
+    padding: 16px 28px; border-radius: 10px;
+    font-size: 16px; font-weight: 700;
+    border: 2px solid var(--border);
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: all .2s; cursor: pointer;
+  }
+  .btn-secondary:hover { border-color: var(--accent); }
+  .hero-trust {
+    display: flex; gap: 28px; margin-top: 32px; flex-wrap: wrap;
+    font-size: 13px; color: var(--muted); justify-content: center;
+  }
+  .hero-trust div { display: flex; align-items: center; gap: 6px; }
+  .check { color: var(--success); font-weight: 800; }
+
+  /* SOCIAL PROOF */
+  .social-proof { padding: 36px 0; border-bottom: 1px solid var(--border); background: var(--bg-soft); }
+  .social-proof-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center;
+  }
+  @media (max-width: 768px) { .social-proof-grid { grid-template-columns: repeat(2, 1fr); } }
+  .stat-num { font-size: 32px; font-weight: 900; color: var(--primary); letter-spacing: -0.02em; }
+  .stat-label { font-size: 13px; color: var(--muted); font-weight: 500; margin-top: 4px; }
+
+  /* SECTIONS */
+  section { padding: 80px 0; }
+  @media (max-width: 768px) { section { padding: 56px 0; } }
+  .section-header { text-align: center; max-width: 720px; margin: 0 auto 48px; }
+  .section-eyebrow {
+    display: inline-block; background: var(--primary-light); color: var(--primary);
+    padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 700;
+    margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .section-title {
+    font-size: clamp(30px, 4.5vw, 44px);
+    font-weight: 900; letter-spacing: -0.03em;
+    line-height: 1.05; margin-bottom: 16px;
+  }
+  .section-sub { font-size: 17px; color: var(--muted); }
+
+  /* PRODUTOS GRID */
+  #produtos { background: #fff; }
+  .products-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  @media (max-width: 900px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .products-grid { grid-template-columns: 1fr; } }
+  .product-card {
+    background: #fff; border: 1px solid var(--border);
+    border-radius: 16px; overflow: hidden;
+    transition: all .25s ease;
+    display: flex; flex-direction: column;
+    text-decoration: none; color: inherit;
+  }
+  .product-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(30,58,138,0.15);
+  }
+  .product-card-img {
+    aspect-ratio: 1 / 1;
+    background: var(--bg-soft);
+    overflow: hidden; position: relative;
+  }
+  .product-card-img img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform .4s ease;
+  }
+  .product-card:hover .product-card-img img { transform: scale(1.05); }
+  .product-card-tag {
+    position: absolute; top: 12px; left: 12px;
+    padding: 4px 10px; border-radius: 6px;
+    font-size: 11px; font-weight: 800; color: #fff;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  .tag-snapmaker { background: var(--tag-snapmaker); }
+  .tag-flashforge { background: var(--tag-flashforge); }
+  .tag-bambu { background: var(--tag-bambu); }
+  .product-card-body {
+    padding: 22px 22px 24px;
+    display: flex; flex-direction: column; gap: 10px;
+    flex: 1;
+  }
+  .product-card-name { font-size: 18px; font-weight: 800; color: var(--accent); line-height: 1.2; }
+  .product-card-desc { font-size: 13px; color: var(--muted); flex: 1; }
+  .product-card-price-row {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-top: 8px; padding-top: 14px; border-top: 1px solid var(--border);
+  }
+  .product-card-price {
+    font-size: 22px; font-weight: 900; color: var(--primary);
+    letter-spacing: -0.02em;
+  }
+  .product-card-price small { font-size: 12px; color: var(--muted); font-weight: 600; margin-left: 4px; }
+  .product-card-link {
+    color: var(--primary); font-size: 13px; font-weight: 700;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+
+  /* PROCESS (como funciona) */
+  #processo { background: var(--bg-soft); }
+  .process-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  }
+  @media (max-width: 900px) { .process-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .process-grid { grid-template-columns: 1fr; } }
+  .process-step { text-align: center; padding: 24px; }
+  .process-num {
+    width: 56px; height: 56px;
+    background: var(--primary); color: #fff;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 900;
+    margin: 0 auto 16px;
+    box-shadow: 0 8px 20px rgba(30,58,138,0.3);
+  }
+  .process-step h3 { font-size: 17px; margin-bottom: 6px; font-weight: 700; }
+  .process-step p { font-size: 14px; color: var(--muted); }
+
+  /* COTAR — call to action */
+  #cotar {
+    background: linear-gradient(135deg, var(--primary) 0%, #2563eb 60%, #60a5fa 100%);
+    color: #fff; position: relative;
+  }
+  #cotar::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.15), transparent 55%);
+    pointer-events: none;
+  }
+  #cotar > * { position: relative; z-index: 1; }
+  #cotar .section-title { color: #fff; }
+  #cotar .section-eyebrow { background: rgba(255,255,255,0.2); color: #fff; }
+  #cotar .section-sub { color: rgba(255,255,255,0.9); }
+  .cotar-cta-row {
+    display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 24px;
+  }
+  .btn-white {
+    background: #fff; color: var(--primary);
+    padding: 16px 28px; border-radius: 10px;
+    font-size: 16px; font-weight: 800;
+    transition: all .2s; display: inline-flex; align-items: center; gap: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15); cursor: pointer;
+  }
+  .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.22); }
+
+  /* FAQ */
+  .faq-list { max-width: 800px; margin: 0 auto; }
+  .faq-item {
+    background: #fff; border: 1px solid var(--border);
+    border-radius: 12px; margin-bottom: 12px; overflow: hidden;
+    transition: border-color .2s;
+  }
+  .faq-item[open] { border-color: var(--primary); }
+  .faq-item summary {
+    padding: 20px 24px; cursor: pointer;
+    font-weight: 600; font-size: 16px;
+    display: flex; justify-content: space-between; align-items: center;
+    list-style: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 24px; color: var(--primary); transition: transform .2s; }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-content { padding: 0 24px 20px; color: var(--muted); font-size: 15px; }
+
+  /* FOOTER */
+  footer { background: #0a0e1a; color: #94a3b8; padding: 48px 0 24px; font-size: 14px; }
+  .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 32px;
+  }
+  @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 24px; } }
+  footer h4 { color: #fff; font-size: 14px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+  footer ul { list-style: none; }
+  footer li { margin-bottom: 6px; }
+  footer a:hover { color: #fff; }
+  .footer-bottom { border-top: 1px solid #1e293b; padding-top: 20px; text-align: center; font-size: 13px; color: #64748b; }
+
+  /* WHATSAPP FLOAT */
+  .whatsapp-float {
+    position: fixed; bottom: 24px; right: 24px;
+    background: #25D366; color: #fff;
+    width: 60px; height: 60px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 24px rgba(37,211,102,0.4); z-index: 999;
+    transition: transform .2s; font-size: 28px;
+  }
+  .whatsapp-float:hover { transform: scale(1.08); }
+  .whatsapp-float-label {
+    position: absolute; right: 70px; top: 50%; transform: translateY(-50%);
+    background: var(--accent); color: #fff;
+    padding: 8px 14px; border-radius: 8px;
+    font-size: 13px; font-weight: 600; white-space: nowrap;
+    opacity: 0; pointer-events: none; transition: opacity .2s;
+  }
+  .whatsapp-float:hover .whatsapp-float-label { opacity: 1; }
+  @media (max-width: 600px) { .whatsapp-float-label { display: none; } }
+
+  /* MODAL DE COTAÇÃO */
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(15,23,42,0.65);
+    backdrop-filter: blur(4px);
+    display: none; align-items: flex-start; justify-content: center;
+    overflow-y: auto; padding: 24px 16px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: #fff; border-radius: 20px;
+    width: 100%; max-width: 640px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+    overflow: hidden; animation: modalUp .25s ease;
+  }
+  @keyframes modalUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .modal-header {
+    background: var(--accent); color: #fff;
+    padding: 18px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .modal-header h3 { font-size: 16px; font-weight: 700; margin: 0; }
+  .modal-close {
+    background: rgba(255,255,255,0.12); color: #fff;
+    width: 30px; height: 30px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; line-height: 1; transition: background .2s;
+  }
+  .modal-close:hover { background: rgba(255,255,255,0.22); }
+  .modal-body { padding: 22px 24px 26px; }
+  .modal-intro {
+    background: var(--primary-light); border: 1px solid #c7d2fe;
+    border-radius: 12px; padding: 14px 18px; margin-bottom: 22px;
+    font-size: 14px; color: var(--accent); line-height: 1.5;
+  }
+  .form-grid { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+  .form-grid .col-2 { grid-column: span 2; }
+  @media (max-width: 600px) { .form-grid { grid-template-columns: 1fr; } .form-grid .col-2 { grid-column: span 1; } }
+  .form-field { position: relative; }
+  .form-field input, .form-field select, .form-field textarea {
+    width: 100%; padding: 18px 14px 6px;
+    border: 1px solid var(--border); border-radius: 10px;
+    font-size: 14px; font-family: inherit;
+    background: #fff; color: var(--accent);
+    transition: border-color .2s, box-shadow .2s;
+    appearance: none; -webkit-appearance: none;
+  }
+  .form-field textarea { padding-top: 24px; padding-bottom: 12px; min-height: 80px; resize: vertical; }
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+    outline: none; border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(30,58,138,0.1);
+  }
+  .form-field label {
+    position: absolute; top: 13px; left: 14px;
+    font-size: 13px; color: var(--muted);
+    transition: all .15s; pointer-events: none;
+  }
+  .form-field input:focus + label,
+  .form-field input:not(:placeholder-shown) + label,
+  .form-field select:focus + label,
+  .form-field select.has-value + label,
+  .form-field textarea:focus + label,
+  .form-field textarea:not(:placeholder-shown) + label {
+    top: 4px; font-size: 10px; color: var(--primary); font-weight: 600;
+  }
+  .form-field.phone-field input { padding-left: 64px; }
+  .form-field .phone-prefix {
+    position: absolute; left: 12px; top: 26px;
+    font-size: 13px; font-weight: 700; color: var(--accent);
+    pointer-events: none;
+  }
+  .form-field.phone-field label { left: 64px; }
+  .form-field.select-field::after {
+    content: '▾'; position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+    color: var(--muted); pointer-events: none;
+  }
+  .modal-submit {
+    background: var(--primary); color: #fff;
+    padding: 15px; border-radius: 10px;
+    font-size: 16px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    transition: background .2s; width: 100%; cursor: pointer; margin-top: 14px;
+  }
+  .modal-submit:hover { background: var(--primary-dark); }
+  .modal-foot-note {
+    font-size: 11px; color: var(--muted); text-align: center;
+    margin-top: 10px; line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  🌎 <strong>Importação direta dos EUA pra sua porta</strong> · preço final calculado em BRL · sem susto na alfândega
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <nav class="nav">
+      <a href="#" class="logo">
+        <span class="logo-mark"><img src="GBS_LOGOTIPO.png" alt="GlobalBrasilShop logo" /></span>
+        <span class="logo-text">
+          <strong>GlobalBrasilShop</strong>
+          <span>Impressoras 3D · Importação direta</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="#produtos">Produtos</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#faq">FAQ</a>
+        <a href="#" class="nav-cta" onclick="openCotarModal(); return false;">Cotar outro modelo</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="hero-badge"><span class="dot"></span> 5 modelos disponíveis · Bambu Lab · Flashforge · Snapmaker</span>
+    <h1>Impressoras 3D dos EUA <span>direto na sua porta</span>, sem dor de cabeça com importação</h1>
+    <p class="lead">A GBS pesquisa, compra e entrega impressoras 3D originais das melhores marcas — Bambu Lab, Flashforge, Snapmaker e mais. Preço final calculado em BRL, frete e impostos inclusos. Não achou seu modelo? Solicite uma cotação personalizada.</p>
+    <div class="hero-cta-row">
+      <a href="#produtos" class="btn-primary">Ver impressoras disponíveis →</a>
+      <a href="#" class="btn-secondary" onclick="openCotarModal(); return false;">💬 Cotar outro modelo</a>
+    </div>
+    <div class="hero-trust">
+      <div><span class="check">✓</span> Pagamento em BRL (Pix, cartão até 18×, boleto)</div>
+      <div><span class="check">✓</span> Atendimento em português via WhatsApp</div>
+      <div><span class="check">✓</span> Rastreio do pedido até a entrega</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<div class="social-proof">
+  <div class="container">
+    <div class="social-proof-grid">
+      <div>
+        <div class="stat-num">5</div>
+        <div class="stat-label">Modelos disponíveis</div>
+      </div>
+      <div>
+        <div class="stat-num">3</div>
+        <div class="stat-label">Marcas consagradas</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Impostos inclusos</div>
+      </div>
+      <div>
+        <div class="stat-num">15-35</div>
+        <div class="stat-label">Dias úteis na sua porta</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUTOS -->
+<section id="produtos">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Em destaque</span>
+      <h2 class="section-title">Modelos disponíveis</h2>
+      <p class="section-sub">Cada impressora tem sua landing dedicada com fotos, specs completas, parcelamento e checkout direto. Clique no card pra ver os detalhes.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Bambu Lab P1S Combo -->
+      <a href="https://p1s.globalbrasilshop.com" class="product-card" target="_blank" rel="noopener" onclick="trackProductClick('Bambu Lab P1S Combo')">
+        <div class="product-card-img">
+          <span class="product-card-tag tag-bambu">Bambu Lab</span>
+          <img src="thumb_p1s.jpg" alt="Bambu Lab P1S Combo" loading="lazy" />
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-name">Bambu Lab P1S Combo</div>
+          <div class="product-card-desc">A impressora 3D mais vendida do mundo, em versão Combo com sistema AMS multi-cor incluído. Câmara fechada, setup 15 min.</div>
+          <div class="product-card-price-row">
+            <div class="product-card-price">R$ 7.970<small>* à vista</small></div>
+            <span class="product-card-link">Ver detalhes →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Bambu Lab P2S Combo -->
+      <a href="https://p2s.globalbrasilshop.com" class="product-card" target="_blank" rel="noopener" onclick="trackProductClick('Bambu Lab P2S Combo')">
+        <div class="product-card-img">
+          <span class="product-card-tag tag-bambu">Bambu Lab</span>
+          <img src="thumb_p2s.jpg" alt="Bambu Lab P2S Combo" loading="lazy" />
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-name">Bambu Lab P2S Combo</div>
+          <div class="product-card-desc">Sucessora da P1S com AI Oversight, AMS 2.0 com secagem ativa de filamento e touchscreen interativo. Combo com AMS 2.0 incluído.</div>
+          <div class="product-card-price-row">
+            <div class="product-card-price">R$ 9.970<small>* à vista</small></div>
+            <span class="product-card-link">Ver detalhes →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Snapmaker U1 -->
+      <a href="https://snapmaker.globalbrasilshop.com" class="product-card" target="_blank" rel="noopener" onclick="trackProductClick('Snapmaker U1')">
+        <div class="product-card-img">
+          <span class="product-card-tag tag-snapmaker">Snapmaker</span>
+          <img src="thumb_snapmaker.jpg" alt="Snapmaker U1" loading="lazy" />
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-name">Snapmaker U1</div>
+          <div class="product-card-desc">Multi-cor de verdade com sistema CFS de 4 bicos independentes. Premiada com iF Design Award 2026 e Tom's Hardware Editor's Choice.</div>
+          <div class="product-card-price-row">
+            <div class="product-card-price">R$ 12.970<small>* à vista</small></div>
+            <span class="product-card-link">Ver detalhes →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Flashforge Creator 5 -->
+      <a href="https://creator5.globalbrasilshop.com" class="product-card" target="_blank" rel="noopener" onclick="trackProductClick('Flashforge Creator 5')">
+        <div class="product-card-img">
+          <span class="product-card-tag tag-flashforge">Flashforge</span>
+          <img src="thumb_creator5.jpg" alt="Flashforge Creator 5" loading="lazy" />
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-name">Flashforge Creator 5</div>
+          <div class="product-card-desc">Multi-cor com 4 toolheads independentes, até 500% mais rápida e zero desperdício de filamento. Lançamento Flashforge 2026.</div>
+          <div class="product-card-price-row">
+            <div class="product-card-price">R$ 10.970<small>* à vista</small></div>
+            <span class="product-card-link">Ver detalhes →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Flashforge Creator 5 Pro -->
+      <a href="https://creator5pro.globalbrasilshop.com" class="product-card" target="_blank" rel="noopener" onclick="trackProductClick('Flashforge Creator 5 Pro')">
+        <div class="product-card-img">
+          <span class="product-card-tag tag-flashforge">Flashforge</span>
+          <img src="thumb_creator5pro.jpg" alt="Flashforge Creator 5 Pro" loading="lazy" />
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-name">Flashforge Creator 5 Pro</div>
+          <div class="product-card-desc">Versão profissional com câmara fechada aquecida 65°C, filtragem HEPA + carvão e estrutura rígida. Pra ABS, PC, Nylon sem warping.</div>
+          <div class="product-card-price-row">
+            <div class="product-card-price">R$ 12.250<small>* à vista</small></div>
+            <span class="product-card-link">Ver detalhes →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card de cotação personalizada (qualquer produto americano) -->
+      <a href="#" class="product-card" onclick="openCotarModal(); return false;" style="background: linear-gradient(135deg, var(--primary-light), #fff); border-color: var(--primary); border-style: dashed;">
+        <div class="product-card-img" style="background: linear-gradient(135deg, var(--primary) 0%, #2563eb 100%); display: flex; align-items: center; justify-content: center; color: #fff;">
+          <div style="text-align: center; padding: 20px;">
+            <div style="font-size: 56px; margin-bottom: 12px;">💬</div>
+            <div style="font-size: 18px; font-weight: 800; letter-spacing: -0.02em;">Quer outro produto?</div>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-name" style="color: var(--primary);">Cote qualquer produto dos EUA</div>
+          <div class="product-card-desc">Outra impressora 3D, eletrônicos, ferramentas, beleza, suplementos, tech... A GBS cota e importa praticamente qualquer produto do mercado americano. <strong>Solicite apenas se tiver real intenção de comprar.</strong></div>
+          <div class="product-card-price-row">
+            <div class="product-card-price" style="font-size: 16px;">Cotação séria via WhatsApp</div>
+            <span class="product-card-link">Solicitar →</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <p style="text-align: center; margin-top: 32px; color: var(--muted); font-size: 13px;">
+      *Valores sujeitos a variação conforme cotação do dólar no dia da compra. Frete + impostos já calculados.
+    </p>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section id="processo">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Como funciona</span>
+      <h2 class="section-title">Importar com a GBS é mais simples do que parece</h2>
+      <p class="section-sub">A gente cuida da logística inteira, do pedido nos EUA até a entrega na sua porta. Você só recebe e imprime.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-num">1</div>
+        <h3>Você escolhe e fecha o pedido</h3>
+        <p>Pelo site (com checkout direto) ou cotação via WhatsApp pra modelos não listados. Pagamento em BRL — Pix, cartão ou boleto.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">2</div>
+        <h3>Buscamos no mercado americano</h3>
+        <p>Adquirimos sua unidade nova diretamente no mercado americano. Você recebe nota fiscal de origem e código de rastreio do envio.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">3</div>
+        <h3>Internalização legal</h3>
+        <p>Frete aéreo + desembaraço aduaneiro com todos os impostos pagos. Tudo já incluso no valor que você pagou — sem surpresa na alfândega.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">4</div>
+        <h3>Entrega na sua porta</h3>
+        <p>Em 15-35 dias úteis (dependendo do fornecedor), sua impressora chega no endereço cadastrado, com rastreio nacional e suporte em português.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COTAR -->
+<section id="cotar">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Já que você está aqui...</span>
+      <h2 class="section-title">Quer cotar outro produto dos EUA?</h2>
+      <p class="section-sub">A GBS importa praticamente qualquer coisa do mercado americano: outras impressoras 3D, eletrônicos, ferramentas, beleza, suplementos, gadgets, equipamentos profissionais. Se você acha lá fora, a gente cota e entrega aqui. Resposta em até 24h via WhatsApp.</p>
+      <p class="section-sub" style="margin-top: 14px; font-size: 14px; opacity: 0.85; font-style: italic;">⚠️ Cada cotação envolve trabalho real (pesquisa, cálculo de frete por peso, impostos, câmbio do dia). Pedimos que solicite somente se tiver real intenção de compra.</p>
+    </div>
+    <div class="cotar-cta-row">
+      <a href="#" class="btn-white" onclick="openCotarModal(); return false;">📋 Solicitar cotação personalizada</a>
+      <a href="https://wa.me/13053152155?text=Ol%C3%A1%21%20Quero%20cotar%20um%20produto%20dos%20EUA" class="btn-secondary" target="_blank" rel="noopener" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.3);">💬 WhatsApp direto</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">Dúvidas frequentes</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Os impostos de importação já estão inclusos no preço?</summary>
+        <div class="faq-content">Sim. O valor anunciado já contempla o produto, frete internacional, taxa de importação federal (60%) e ICMS estadual. Você não recebe nenhuma surpresa da Receita Federal — sua impressora chega liberada e nacionalizada.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Quanto tempo leva pra chegar?</summary>
+        <div class="faq-content">Depende do fornecedor: produtos Bambu Lab e Snapmaker chegam em 15 a 25 dias úteis; produtos Flashforge em 20 a 35 dias úteis. Você acompanha cada etapa por WhatsApp.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>E se a impressora chegar com defeito?</summary>
+        <div class="faq-content">Todas as impressoras vêm com 12 meses de garantia internacional do fabricante. Em caso de defeito de fábrica, fazemos toda a interface com o suporte oficial em inglês — você só precisa nos enviar o problema em português via WhatsApp. Cobrimos o custo de logística reversa de defeitos confirmados em até 30 dias após entrega.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Recebo nota fiscal?</summary>
+        <div class="faq-content">Sim. Você recebe a nota fiscal de origem e a Declaração de Importação (DI). Tudo legal e rastreável para uso pessoal ou empresarial.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Como funciona a cotação personalizada?</summary>
+        <div class="faq-content">Você preenche o form com a marca, modelo e link de referência (se tiver). Em até 24h via WhatsApp você recebe um orçamento com preço final em BRL, prazo estimado e formas de pagamento. Sem compromisso — só fecha se quiser.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Posso parcelar?</summary>
+        <div class="faq-content">Sim. Cartão até 18× (com juros embutidos a partir da 2ª parcela). À vista no Pix tem o melhor preço, e também aceitamos boleto.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color: #fff; margin-bottom: 16px;">
+          <span class="logo-mark"><img src="GBS_LOGOTIPO.png" alt="GlobalBrasilShop" /></span>
+          <span class="logo-text">
+            <strong style="color:#fff;">GlobalBrasilShop</strong>
+            <span style="color:#94a3b8;">Uma loja americana que funciona no Brasil</span>
+          </span>
+        </div>
+        <p style="max-width: 360px;">A GBS pesquisa, compra e entrega produtos dos EUA na sua porta — com o preço final já calculado, sem trabalho e sem susto na alfândega. Eletrônicos, beleza, suplementos e impressoras 3D.</p>
+        <p style="margin-top: 12px;">
+          <a href="https://globalbrasilshop.com" style="color:#93c5fd;">globalbrasilshop.com</a> ·
+          <a href="https://instagram.com/globalbrasilshop" style="color:#93c5fd;">@globalbrasilshop</a>
+        </p>
+      </div>
+      <div>
+        <h4>Produtos 3D</h4>
+        <ul>
+          <li><a href="https://p1s.globalbrasilshop.com">Bambu Lab P1S Combo</a></li>
+          <li><a href="https://p2s.globalbrasilshop.com">Bambu Lab P2S Combo</a></li>
+          <li><a href="https://snapmaker.globalbrasilshop.com">Snapmaker U1</a></li>
+          <li><a href="https://creator5.globalbrasilshop.com">Flashforge Creator 5</a></li>
+          <li><a href="https://creator5pro.globalbrasilshop.com">Flashforge Creator 5 Pro</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/13053152155">WhatsApp +1 (305) 315-2155</a></li>
+          <li><a href="mailto:contato@globalbrasilshop.com">contato@globalbrasilshop.com</a></li>
+          <li>Atendimento seg-sex 9h-18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 GlobalBrasilShop · Todos os direitos reservados<br>
+      GlobalBrasilShop é uma importadora independente. Marcas mencionadas pertencem a seus respectivos donos.
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/13053152155?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20uma%20impressora%203D" class="whatsapp-float" target="_blank" rel="noopener" onclick="track('whatsapp_click', { source: 'float_button' })">
+  <span class="whatsapp-float-label">Tire dúvidas no WhatsApp</span>
+  💬
+</a>
+
+<!-- MODAL DE COTAÇÃO -->
+<div class="modal-overlay" id="cotarModal" role="dialog" aria-modal="true" aria-labelledby="cotarModalTitle">
+  <div class="modal" role="document">
+    <div class="modal-header">
+      <h3 id="cotarModalTitle">Cotar produto dos EUA</h3>
+      <button type="button" class="modal-close" onclick="closeCotarModal()" aria-label="Fechar">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-intro" style="background: #fef3c7; border-color: #fbbf24;">
+        <strong>⚠️ Antes de enviar:</strong> cada cotação envolve trabalho de verdade — pesquisa do fornecedor americano, cálculo de frete por peso, impostos federais e ICMS pelo seu estado, câmbio do dia. Pedimos que você preencha <strong>apenas se tiver real intenção de compra</strong>. Em até 24h respondemos via WhatsApp com preço final em BRL, prazo estimado e formas de pagamento.
+      </div>
+
+      <form id="cotarForm" onsubmit="submitCotar(event)" novalidate>
+        <div class="form-grid">
+          <div class="form-field col-2">
+            <input type="text" id="c-nome" name="nome" required placeholder=" " autocomplete="name" />
+            <label for="c-nome">Seu nome</label>
+          </div>
+          <div class="form-field">
+            <input type="email" id="c-email" name="email" required placeholder=" " autocomplete="email" />
+            <label for="c-email">E-mail</label>
+          </div>
+          <div class="form-field phone-field">
+            <span class="phone-prefix">🇧🇷&nbsp;+55</span>
+            <input type="tel" id="c-telefone" name="telefone" required maxlength="15" placeholder=" " autocomplete="tel-national" inputmode="numeric" />
+            <label for="c-telefone">WhatsApp</label>
+          </div>
+          <div class="form-field select-field col-2">
+            <select id="c-categoria" name="categoria" required>
+              <option value="" disabled selected hidden></option>
+              <option>Impressora 3D</option>
+              <option>Eletrônicos / Tech</option>
+              <option>Ferramentas / Equipamentos</option>
+              <option>Beleza / Skincare</option>
+              <option>Suplementos / Saúde</option>
+              <option>Áudio / Foto / Vídeo</option>
+              <option>Gaming / Acessórios</option>
+              <option>Casa / Cozinha</option>
+              <option>Esportes / Outdoor</option>
+              <option>Outro</option>
+            </select>
+            <label for="c-categoria">Categoria do produto</label>
+          </div>
+          <div class="form-field col-2">
+            <input type="text" id="c-marca" name="marca" placeholder=" " />
+            <label for="c-marca">Marca (se souber)</label>
+          </div>
+          <div class="form-field col-2">
+            <input type="text" id="c-modelo" name="modelo" required placeholder=" " />
+            <label for="c-modelo">Modelo / Produto / Descrição</label>
+          </div>
+          <div class="form-field col-2">
+            <input type="url" id="c-url" name="url" placeholder=" " />
+            <label for="c-url">Link de referência (opcional, mas ajuda muito)</label>
+          </div>
+          <div class="form-field col-2">
+            <textarea id="c-obs" name="obs" placeholder=" "></textarea>
+            <label for="c-obs">Observações (opcional)</label>
+          </div>
+        </div>
+
+        <button type="submit" class="modal-submit">
+          Enviar cotação pelo WhatsApp →
+        </button>
+        <p class="modal-foot-note">
+          Por favor, solicite cotação <strong>somente se tiver real intenção de comprar</strong>. Resposta em até 24h. *Preço final pode variar conforme cotação do dólar do dia da compra.
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ANALYTICS HELPER
+  function track(name, params) {
+    if (typeof gtag === 'function') gtag('event', name, params || {});
+  }
+
+  function trackProductClick(product) {
+    track('select_item', { item_name: product, source: 'vitrine_3d' });
+  }
+
+  // MODAL
+  function openCotarModal() {
+    document.getElementById('cotarModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    track('open_quote_form');
+    setTimeout(() => { document.getElementById('c-nome')?.focus(); }, 200);
+  }
+  function closeCotarModal() {
+    document.getElementById('cotarModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('cotarModal').addEventListener('click', e => {
+    if (e.target.id === 'cotarModal') closeCotarModal();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeCotarModal();
+  });
+
+  // MASKS
+  function maskPhoneBR(v) {
+    v = v.replace(/\D/g, '').slice(0, 11);
+    if (v.length === 0) return '';
+    if (v.length <= 2) return '(' + v;
+    if (v.length <= 6) return '(' + v.slice(0,2) + ') ' + v.slice(2);
+    if (v.length <= 10) return '(' + v.slice(0,2) + ') ' + v.slice(2,6) + '-' + v.slice(6);
+    return '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+  }
+  document.getElementById('c-telefone').addEventListener('input', e => e.target.value = maskPhoneBR(e.target.value));
+
+  document.getElementById('c-categoria').addEventListener('change', e => {
+    e.target.classList.toggle('has-value', !!e.target.value);
+  });
+
+  // SUBMIT
+  function submitCotar(e) {
+    e.preventDefault();
+    const f = e.target;
+    const required = ['c-nome','c-email','c-telefone','c-categoria','c-modelo'];
+    for (const id of required) {
+      const el = f.querySelector('#' + id);
+      if (!el.value.trim()) { el.focus(); el.style.borderColor = '#dc2626'; setTimeout(() => el.style.borderColor = '', 2500); return; }
+    }
+    const get = id => f.querySelector('#' + id).value.trim();
+    const marca = get('c-marca');
+    const url = get('c-url');
+    const obs = get('c-obs');
+    const msg =
+`Olá! Quero solicitar uma *cotação personalizada* de produto dos EUA.
+
+*👤 Meus dados:*
+Nome: ${get('c-nome')}
+E-mail: ${get('c-email')}
+WhatsApp: +55 ${get('c-telefone')}
+
+*🛒 Produto desejado:*
+Categoria: ${get('c-categoria')}${marca ? '\nMarca: ' + marca : ''}
+Modelo / Descrição: ${get('c-modelo')}${url ? '\nLink: ' + url : ''}${obs ? '\n\nObservações: ' + obs : ''}
+
+Aguardo orçamento com preço final em BRL e prazo de entrega.`;
+    track('submit_quote', {
+      category: get('c-categoria'),
+      brand: marca || '(não informada)',
+      model: get('c-modelo')
+    });
+    window.open('https://wa.me/13053152155?text=' + encodeURIComponent(msg), '_blank');
+  }
+</script>
+
+</body>
+</html>
